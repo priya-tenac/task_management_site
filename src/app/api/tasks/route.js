@@ -1,5 +1,3 @@
-
-
 import { connectDB } from "@/app/lib/mongodb";
 import Task from "@/models/Task";
 

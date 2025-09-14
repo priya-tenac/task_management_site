@@ -1,6 +1,3 @@
-
- 
-
 'use client';
 import React, { useEffect, useState } from 'react'
 import { useAuth } from '../lib/AuthContext';
@@ -25,7 +22,6 @@ export default function LoginPage() {
         console.error("Error logging in/creating account:", error);
     }
   }
-
   useEffect(() => {
     if (user){
         router.push('/'); // Redirect to home page if user is already logged in
@@ -60,13 +56,11 @@ export default function LoginPage() {
                     {isLogin ? "Login" : "Register"}
                 </button>
             </form>
-
             <div className='flex items-center my-6'>
                 <hr className='flex-1 border-gray-300'></hr>
                 <span className='mx-4 text-gray-500'>or</span>
                 <hr className='flex-1 border-gray-300'></hr>
             </div>
-
             <button onClick={loginWithGoogle} className='w-full flex items-center justify-center gap-2 border border-gray-300 text-gray-700 py-3 rounded-lg hover:bg-gray-50 transition duration-300'>
                 <img
                     src='https://www.svgrepo.com/show/475656/google-color.svg'
